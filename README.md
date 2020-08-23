@@ -1,3 +1,2 @@
-# Bookz
-Making a clone website using Bootstrap
-using different techniques
+## Bookz
+This site was built using [Bootstrap](https://getbootstrap.com)
