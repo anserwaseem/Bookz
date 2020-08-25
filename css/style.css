@@ -50,36 +50,36 @@ header .nav-link:hover {
   color: black;
 }
 
-header .row .col-md-5 {
-  padding-left: 4.2vmin 1vmin;
-}
-
-header .row .col-md-5 img {
+header .row .col-lg-5 img {
   width: 90%;
+  padding-top: 10vmin !important;
 }
 
-header .row .col-md-7 {
+header .row .col-sm-12:nth-child(2) {
+  padding-bottom: 20vmin;
+}
+
+header .row .col-lg-7 {
   padding: 22vmin 1vmin;
-  padding-bottom: 35vmin;
   font-family: var(--Rubik);
 }
 
-header .container .col-md-7 h6 {
+header .container .col-lg-7 h6 {
   padding: 1vmin;
   letter-spacing: 4px;
 }
 
-header .container .col-md-7 h1 {
+header .container .col-lg-7 h1 {
   font-size: 8vmin;
   font-weight: bold;
   padding: 0.1em 0em;
 }
 
-header .container .col-md-7 p {
+header .container .col-lg-7 p {
   padding: 1vmin 5vmin;
 }
 
-header .container .col-md-7 button {
+header .container .col-lg-7 button {
   border-radius: 30px;
 }
 
@@ -126,7 +126,7 @@ header .container .col-md-7 button {
   width: 100%;
   height: 55vmin;
   background:url("../assets/pexels-photo-452738.jpg");
-  background-position: -24rem -19rem;
+  background-position: -28rem -24rem;
   background-size: 150%;
   position: relative;
 }
@@ -275,7 +275,8 @@ header .container .col-md-7 button {
 }
 
 .section-4 .carousel-item {
-  padding-left: 3rem;
+  padding-left: -2rem;
+  padding-top: 2rem;
 }
 
 .section-4 .img-border-radius {
@@ -309,3 +310,67 @@ footer .social-platforms i {
 footer .social-platforms i+i{
   padding: 0 0.5em;
 }
+
+ /* Small devices (landscape phones, less than 768px) */
+@media only screen and (max-width: 768px) {
+  header .navbar-brand {
+    padding-left: 1rem;
+  }
+
+  .section-1 .row .col-md-6 .panel {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+  .section-2 .cover {
+    background-position: -45vmin -25vmin;
+  }
+  .numbers .rect {
+    height: 10rem;
+    width: 8rem;
+  }
+  .numbers .rect h1 {
+     font-size: 2rem;
+  }
+
+  .section-3 {
+    height: inherit;
+    padding: 10vmin !important;
+  }
+  .section-3 .row h1 {
+    padding: 6vmin 4vmin;
+  }
+  .section-3 .row .col-md-6 {
+    text-align: center !important;
+  }
+  .section-3 .desktop i {
+    font-size: 7vmin;
+  }
+
+  .section-4 .team {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .section-4 .carousel-inner {
+    width: 100% !important;
+  }
+
+  footer .row .col-md-2, footer .row .col-md-5 {
+    margin-top: 10vmin;
+  }
+  /* Adjacent sibling combinator */
+  footer .social-platforms i, footer .social-platforms i+i {
+    padding: 0.4em;
+  }
+}
+
+/* Sticky Class */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 9999;
+  transition: all 1.5s ease;
+ }
